@@ -1,10 +1,16 @@
 proxy-providers:
-  订阅1:
-    url: http://sub.store/download/订阅1?target=Stash
+  Provider-1:
     interval: 600
-  订阅2:
-    url: http://sub.store/download/订阅2?target=Stash
+    url: http://sub.store/download/Provider-1?target=Stash
+  Provider-2:
     interval: 600
+    url: http://sub.store/download/Provider-2?target=Stash
+  Provider-3:
+    interval: 600
+    url: http://sub.store/download/Provider-3?target=Stash
+  Provider-4:
+    interval: 600
+    url: http://sub.store/download/Provider-4?target=Stash
 mode: rule
 dns:
   default-nameserver:
@@ -315,7 +321,7 @@ proxy-groups:
     interval: 120
     tolerance: 50
     lazy: true
-    filter: "(?i)(美|🇺🇸|us|states|america)"
+    filter: "(?i)(美|🇺🇲|us|states|america)"
   - name: SG 新加坡
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Singapore.png
     type: url-test
