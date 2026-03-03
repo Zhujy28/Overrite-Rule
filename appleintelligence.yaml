@@ -1,3 +1,4 @@
+proxy-groups:
 rules:
   - DOMAIN-SUFFIX,guzzoni.apple.com,OpenAI
   - DOMAIN-SUFFIX,smoot.apple.com,OpenAI
