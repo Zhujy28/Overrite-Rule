@@ -1,4 +1,8 @@
 proxy-groups:
+  - name: OpenAI
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
+    type: select
+    include-all: true
 rules:
   - DOMAIN-SUFFIX,guzzoni.apple.com,OpenAI
   - DOMAIN-SUFFIX,smoot.apple.com,OpenAI
