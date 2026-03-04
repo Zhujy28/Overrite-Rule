@@ -1,1 +1,18 @@
+name: Apple Intelligence
+desc: 允许Apple Intelligence中的ChatGPT服务
+icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
+catecory: Apple
 
+proxy-groups:
+  - name: Apple Intelligence
+    icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
+    type: select
+    include-all: true
+rules:
+    - 'DOMAIN-SUFFIX,guzzoni.apple.com,Apple Intelligence'
+    - 'DOMAIN-SUFFIX,smoot.apple.com,Apple Intelligence'
+    - 'DOMAIN-SUFFIX,apple-relay.cloudflare.com,Apple Intelligence'
+    - 'DOMAIN-SUFFIX,apple-relay.fastly-edge.com,Apple Intelligence'
+    - 'DOMAIN-SUFFIX,cp4.cloudflare.com,Apple Intelligence'
+    - 'DOMAIN-SUFFIX,apple-relay.apple.com,Apple Intelligence'
+    - 'DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com,Apple Intelligence'
