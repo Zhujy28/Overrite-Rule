@@ -1,7 +1,7 @@
 name: Apple Intelligence
 desc: 允许Apple Intelligence中的ChatGPT服务
 icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
-catecory: Apple
+category: Apple
 
 proxy-groups:
   - name: Apple Intelligence
