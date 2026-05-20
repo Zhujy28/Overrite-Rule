@@ -1,8 +1,8 @@
 # LINE
-DOMAIN-SUFFIX,scdn.co,PROXY
-DOMAIN-SUFFIX,line.naver.jp,PROXY
-DOMAIN-SUFFIX,line.me,PROXY
-DOMAIN-SUFFIX,line-apps.com,PROXY
-DOMAIN-SUFFIX,line-cdn.net,PROXY
-DOMAIN-SUFFIX,line-scdn.net,PROXY
-USER-AGENT,Line*,PROXY
+DOMAIN-SUFFIX,scdn.co
+DOMAIN-SUFFIX,line.naver.jp
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line-cdn.net
+DOMAIN-SUFFIX,line-scdn.net
+USER-AGENT,Line*
