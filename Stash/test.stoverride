@@ -17,7 +17,7 @@ rule-providers:
   apple-intelligence:
     type: http
     behavior: classical
-    format: text
+    format: yaml
     url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/List/AppleIntelligence.list"
     interval: 86400
 
