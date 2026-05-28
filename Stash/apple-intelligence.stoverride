@@ -12,4 +12,4 @@ rule-providers:
     interval: 86400
 
 rules:
-  - RULE-SET,apple-intelligent,GLOBAL
+  - RULE-SET,apple-intelligence,GLOBAL
