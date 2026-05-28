@@ -17,10 +17,9 @@ rule-providers:
   apple-intelligence:
     type: http
     behavior: domain
-    format: set # 修正：纯文本列表（一行一个域名）在 Stash 中使用 set 格式
+    format: text
     url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/Stash/test.list"
     interval: 86400
-    path: ./ruleset/apple_intelligence.yaml # 补充：rule-provider 必须指定本地缓存路径，否则无法下载成功
 
 rules:
   - RULE-SET,apple-intelligence,Apple-Intelligence # 修正：严格缩进，并修正了策略组名称
