@@ -24,4 +24,3 @@ rule-providers:
 
 rules:
   - RULE-SET,apple-intelligence,Apple-Intelligence # 修正：严格缩进，并修正了策略组名称
--  DOMAIN,baidu.com,Apple-Intelligence
