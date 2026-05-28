@@ -15,10 +15,10 @@ proxy-groups:
 rule-providers:
   apple-intelligence:
     type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/List/AppleIntelligence.list" # 你的远程网站列表
-    path: ./ruleset/apple-intelligence.yaml
     interval: 86400
+    behavior: domain
+    format: text
+    url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/List/AppleIntelligence.list" # 你的远程网站列表
 
 rules:
     - RULE-SET,apple-intelligence,Apple-Intelligence
