@@ -12,6 +12,6 @@ rule-providers:
     interval: 86400
 
 rules:
-  # 1. 强制让你列表里的网站走全局代理逻辑（Clash 内核会自动判定你当前选择的代理节点）
+
   - RULE-SET,apple-intelligent,GLOBAL
 
