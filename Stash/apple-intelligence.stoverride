@@ -8,7 +8,7 @@ rule-providers:
     type: http
     behavior: domain
     url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/List/AppleIntelligence.list" # 你的远程网站列表
-    path: ./ruleset/apple-intelligent.yaml
+    path: ./ruleset/apple-intelligence.yaml
     interval: 86400
 
 rules:
