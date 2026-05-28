@@ -12,4 +12,4 @@ rule-providers:
     interval: 86400
 
 rules:
- - AND,((RULE-SET,apple-intelligence),(MATCH)),MATCH
+  - RULE-SET,apple-intelligence,PROXY
