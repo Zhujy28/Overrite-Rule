@@ -3,10 +3,15 @@ desc: 允许Apple Intelligence中的ChatGPT服务
 icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
 category: Apple
 
-proxy-groups:
-  - name: Apple Intelligence
-    icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
-    type: select
-    include-all: true
+rule-providers:
+  apple-intelligence:
+    type: http
+    behavior: domain
+    url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/List/AppleIntelligence.list" # 你的远程网站列表
+    path: ./ruleset/apple-intelligent.yaml
+    interval: 86400
+
 rules:
-    - 'RULE-SET,https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/List/AppleIntelligence.list,PROXY'
+  # 1. 强制让你列表里的网站走全局代理逻辑（Clash 内核会自动判定你当前选择的代理节点）
+  - RULE-SET,apple-intelligenc,GLOBAL
+
