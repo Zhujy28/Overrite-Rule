@@ -3,6 +3,15 @@ desc: 允许Apple Intelligence中的ChatGPT服务
 icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
 category: Apple
 
+proxy-groups:
+  - name: Apple-Intelligence
+    icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
+    type: url-test
+    include-all: true
+    interval: 120
+    tolerance: 50
+    lazy: true
+    filter: "(?i)(新加坡|坡|狮城|🇸🇬|sg|singapore)"
 rule-providers:
   apple-intelligence:
     type: http
@@ -12,4 +21,4 @@ rule-providers:
     interval: 86400
 
 rules:
-    - AND,((RULE-SET,apple-intelligence),(MATCH)),MATCH
+    - RULE-SET,apple-intelligence,PROXY
