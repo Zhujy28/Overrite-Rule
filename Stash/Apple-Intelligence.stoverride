@@ -18,7 +18,7 @@ rule-providers:
     type: http
     behavior: domain
     format: yaml
-    url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/Stash/AppleIntelligence.list"
+    url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/Stash/Apple-Intelligence.list"
     interval: 86400
 
 rules:
