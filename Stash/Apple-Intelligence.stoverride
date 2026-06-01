@@ -15,7 +15,7 @@ proxy-groups:
 
 rule-providers:
   apple-intelligence:
-    type: http
+    type: https
     behavior: domain
     format: yaml
     url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/Stash/Apple-Intelligence.list"
