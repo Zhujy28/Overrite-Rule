@@ -15,11 +15,11 @@ proxy-groups:
 
 rule-providers:
   apple-intelligence:
-    type: https
+    type: http
     behavior: domain
     format: yaml
     url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/Stash/Apple-Intelligence.list"
     interval: 86400
 
 rules:
-  - RULE-SET,apple-intelligence,Apple-Intelligence # 修正：严格缩进，并修正了策略组名称
+  - RULE-SET,apple-intelligence,Apple-Intelligence
