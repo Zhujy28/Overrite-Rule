@@ -12,13 +12,22 @@ proxy-groups:
     lazy: true
     filter: "(?i)(新加坡|坡|狮城|🇸🇬|sg|singapore)"
 
-rule-providers:
-  apple-intelligence:
-    type: http
-    behavior: classical
-    format: yaml
-    url: "https://raw.githubusercontent.com/Zhujy28/Overrite-Rule/refs/heads/main/List/AppleIntelligence.list"
-    interval: 86400
+
 
 rules:
-  - RULE-SET,apple-intelligence,Apple-Intelligence # 修正：严格缩进，并修正了策略组名称
+  - DOMAIN,guzzoni.apple.com,Apple-Intelligence
+  - DOMAIN,smoot.apple.com,Apple-Intelligence
+  - DOMAIN,gspe1-ssl.ls.apple.com,Apple-Intelligence
+  - DOMAIN,gateway.icloud.com,Apple-Intelligence
+
+  # 2. Apple 隐私中继与 Cloudflare/Fastly/Akamai 边缘节点（防止检测真实 IP）
+  - DOMAIN,apple-relay.apple.com,Apple-Intelligence
+  - DOMAIN,apple-relay.cloudflare.com,Apple-Intelligence
+  - DOMAIN,apple-relay.fastly-edge.com,Apple-Intelligence
+  - DOMAIN,apple-relay.akamaized.net,Apple-Intelligence
+  - DOMAIN,apple-relay.mask.apple-dns.net,Apple-Intelligence
+  - DOMAIN,cp4.cloudflare.com,Apple-Intelligence
+
+  # 3. 苹果静态资源/App Store 关联组件
+  - DOMAIN-SUFFIX,apps.mzstatic.com,Apple-Intelligence
+
