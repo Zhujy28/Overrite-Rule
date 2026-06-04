@@ -2,15 +2,14 @@ name: Apple Intelligence
 desc: 允许Apple Intelligence中的ChatGPT服务
 
 
+
+
+
 proxy-groups:
   - name: Apple-Intelligence
-    icon: https://developer.apple.com/assets/elements/icons/apple-intelligence/apple-intelligence-128x128.png
-    type: url-test
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
+    type: select
     include-all: true
-    interval: 120
-    tolerance: 50
-    lazy: true
-    filter: "(?i)(新加坡|坡|狮城|🇸🇬|sg|singapore)"
 
 
 
