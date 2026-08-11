@@ -2,14 +2,11 @@ name: Apple Intelligence
 desc: 允许Apple Intelligence中的ChatGPT服务
 
 
-
-
-
 proxy-groups:
   - name: Apple-Intelligence
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
-    type: select
-    include-all: true
+  - icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
+  - type: select
+  - include-all: true
 
 rules:
   - DOMAIN,guzzoni.smoot.apple.com,Apple-Intelligence
