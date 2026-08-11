@@ -11,9 +11,6 @@ proxy-groups:
     type: select
     include-all: true
 
-
-
-rules:
 rules:
   - DOMAIN,guzzoni.smoot.apple.com,Apple-Intelligence
   - DOMAIN,seed.siri.apple.com,Apple-Intelligence
