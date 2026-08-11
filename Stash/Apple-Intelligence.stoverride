@@ -40,5 +40,6 @@ rules:
   - DOMAIN,apple-relay.fastly-edge.com,Apple-Intelligence
   - DOMAIN,apple-relay.cloudflare.com,Apple-Intelligence
   - DOMAIN,apple-relay.apple.com,Apple-Intelligence
+  - DOMAIN-KEYWORD,siri,Apple-Intelligence
 
 
