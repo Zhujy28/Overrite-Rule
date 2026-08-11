@@ -6,7 +6,8 @@ proxy-groups:
   - name: Apple-Intelligence
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Global.png
     type: select
-    include-all: true
+    proxies:
+      - 手动选择
 
 rules:
   - DOMAIN,guzzoni.smoot.apple.com,Apple-Intelligence
